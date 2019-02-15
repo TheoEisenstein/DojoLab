@@ -125,4 +125,18 @@ public class StringCalculatorTest {
 		
 		assertEquals(expected, actual);
 	}
+	@Test
+	void test12() {
+		String expected = "27";
+		String actual = StringCalculator.add("21,6");
+		
+		assertEquals(expected, actual);
+	}
+	@Test
+	void test13() {
+		String expected = "-5";
+		String actual = StringCalculator.add("20,-25");
+		
+		assertEquals(expected, actual);
+	}
 }
